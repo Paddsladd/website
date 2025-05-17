@@ -1,0 +1,17 @@
+@media only screen and (max-width: 480px) {
+  nav {
+    gap: 40px;
+
+    a {
+      padding: 0.4em 0.8em;
+
+      i {
+        font-size: 1.15rem;
+      }
+
+      span {
+        display: none;
+      }
+    }
+  }
+}

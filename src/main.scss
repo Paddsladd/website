@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400..600&display=swap');
+@import url('https://www.nerdfonts.com/assets/css/webfont.css');
+
+/* Colors */
+$text-color: #dfdfdf;
+$text-color-dark: #a7a7a7;
+$background-color: #242424;
+$link-color: #646cff;
+$link-color-hover: #535bf2;
+
+$nav-color: #515151;
+$button-color: #393939;
+$button-color-dark: #272727;
+
+:root {
+  /* Fonts */
+  font-family: 'Quicksand', 'NerdFontsSymbols Nerd Font', sans-serif, system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  color-scheme: light dark;
+  color: $text-color;
+  background-color: $background-color;
+}
+
+button {
+  border-radius: 5px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: $button-color;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+a {
+  font-weight: 500;
+  color: $link-color;
+  text-decoration: inherit;
+
+  :hover {
+    color: $link-color-hover;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  $text-color: #213547;
+  $background-color: #fff;
+  $link-color-hover: #747bff;
+  $button-color: #f9f9f9;
+}
