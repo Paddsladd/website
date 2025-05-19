@@ -1,42 +1,20 @@
-<script lang="ts">
+<script lang="ts" context="module">
   import './Navbar.scss';
+  import './Media.scss';
+  import { navItems } from '../../config';
 
-  type navItem = {
+  export type navItemsType = {
     url: string;
     icon: string;
     text: string;
-  };
-
-  const github: navItem = {
-    icon: 'cod-github_inverted',
-    text: 'Github',
-    url: 'https://github.com/Paddsladd'
-  };
-
-  const discord: navItem = {
-    icon: 'fa-discord',
-    text: 'Discord',
-    url: 'https://discord.gg/'
-  };
-
-  const email: navItem = {
-    icon: 'fa-envelope',
-    text: 'Email',
-    url: 'mailto:info@paddsladd.com'
-  };
+  }[];
 </script>
 
-{#snippet navElement(item: navItem)}
-  <a href={item.url} target="_blank" rel="noopener noreferrer">
-    <i class="nf-{item.icon}"></i>
-    <span>{item.text}</span>
-  </a>
-{/snippet}
-
-<div>
-  <nav>
-    {@render navElement(github)}
-    {@render navElement(discord)}
-    {@render navElement(email)}
-  </nav>
-</div>
+<nav>
+  {#each navItems as item}
+    <a href={item.url} target="_blank" rel="noopener noreferrer">
+      <i class="nf-{item.icon}"></i>
+      <span>{item.text}</span>
+    </a>
+  {/each}
+</nav>

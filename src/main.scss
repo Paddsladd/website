@@ -11,6 +11,7 @@ $link-color-hover: #535bf2;
 $nav-color: #515151;
 $button-color: #393939;
 $button-color-dark: #272727;
+$border-color: #777777;
 
 :root {
   /* Fonts */
@@ -19,6 +20,9 @@ $button-color-dark: #272727;
   font-weight: 400;
   font-style: normal;
   text-decoration: none;
+  text-align: center;
+
+  scroll-behavior: smooth;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;

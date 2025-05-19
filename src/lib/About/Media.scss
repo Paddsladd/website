@@ -1,0 +1,98 @@
+@media only screen and (max-width: 950px) {
+  #about {
+    grid-template-rows: repeat(4, 1fr);
+
+    img.logo {
+      grid-area: 1 / 5 / 3 / 7;
+    }
+
+    .greating {
+      grid-area: 3 / 5 / 4 / 7;
+    }
+
+    .links {
+      grid-area: 4 / 5 / 5 / 7;
+    }
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  #about {
+    grid-template-rows: repeat(9, 1fr);
+
+    img.logo {
+      grid-area: 1 / 3 / 3 / 5;
+    }
+
+    .greating {
+      grid-area: 3 / 2 / 3 / 6;
+    }
+
+    .links {
+      grid-area: 4 / 2 / 5 / 6;
+    }
+
+    .skillsHeader {
+      grid-area: 5 / 3 / 6 / 5;
+    }
+
+    .skills {
+      grid-area: 5 / 2 / 9 / 6;
+    }
+
+    .learningHeader {
+      grid-area: 8 / 2 / 9 / 6;
+      align-self: self-end;
+    }
+
+    .learning {
+      grid-area: 9 / 2 / 10 / 6;
+    }
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  #about {
+    grid-template-rows: repeat(12, 1fr);
+
+    .greating {
+      grid-area: 3 / 2 / 3 / 6;
+    }
+
+    .skills {
+      grid-area: 6 / 2 / 10 / 6;
+    }
+
+    .learningHeader {
+      grid-area: 10 / 2 / 11 / 6;
+      align-self: self-start;
+    }
+
+    .learning {
+      grid-area: 11 / 2 / 13 / 6;
+    }
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  #about {
+    grid-template-rows: repeat(11, 1fr);
+
+    img.logo {
+      grid-area: 1 / 2 / 3 / 6;
+    }
+
+    .skills {
+      grid-area: 6 / 2 / 9 / 6;
+    }
+
+    .learningHeader {
+      grid-area: 9 / 2 / 10 / 6;
+      align-self: self-start;
+    }
+
+    .learning {
+      grid-area: 10 / 2 / 12 / 6;
+    }
+  }
+}
