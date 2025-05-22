@@ -6,7 +6,8 @@ export default defineConfig({
   plugins: [svelte()],
   build: {
     emptyOutDir: true,
-    assetsDir: './'
+    assetsDir: './',
+    manifest: true
   },
   base: ''
 });
